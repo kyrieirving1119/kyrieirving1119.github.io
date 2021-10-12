@@ -1,116 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en-us">
-  <head>
-    <title>My First Blog // myblog</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="http://kyrieirving1119.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>My First Blog | myblog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
 
     
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My First Blog"/>
-<meta name="twitter:description" content="1、Hugo简介 搭建个人搭建个人博客有很多开源的博客框架，我使用的框架是Hugo。Hugo 是一个基于Go 语言的框架，可以快速方便的创建自己的博客。
-Hugo 支持Markdown 语法，我们可以将自己的文章写成Markdown 的格式，放在我们用Hugo 创建的博客系统中，从而展示给他人。
-2、Git、Hugo安装 本人电脑操作系统为Windows 10 64位
-(1)、安装Git for Windows
-(2)、安装Hugo二进制版
-下载Hugo Windows 64位版压缩包，解压，将包含hugo.exe的目录添加到path变量，打开Git Bash，执行
-hugo version
-结果如下图所示，表示安装成功
-3、创建一个GitHub仓库 这个仓库将用于发布在Hugo上生成的博客
-4、创建Hugo站点 在Git Bash中，进入想要保存站点文件夹的路径，执行
-hugo new site myblog
-系统会生成一个名为myblog的站点工程文件夹
-目录结构如下：  archetypes/
-content/ #静态页面目录
-data/
-layouts/
-resourse/
-static/ #静态文件目录
-themes/ #主题目录
-config.toml #配置文件
- 5、添加主题 在Hugo 主题选择一款主题（我选择的是hugo-theme-noteworthy）,将其下载到themes目录下（或者在themes目录下使用指令添加）
-然后修改根目录中的config.toml文件
-其中baseurl为要发布的GitHub网址，title为博客的名字，theme为主题的名字
-6、创建一篇博客 在根目录中执行
-hugo new posts/my-first-blog.md
-在content\posts\目录下新增了my-first-blog.md文件，使用markdown编辑器即可编辑其中的内容（我使用的是Typora）
-在发布时需要把 draft: true 改为 draft: false 或者直接删除
-7、本地服务器测试 在根目录下执行
-hugo server"/>
+    
+    
+    <link rel="stylesheet" href="http://kyrieirving1119.github.io/css/main.min.975b1911c008aee6ab5fb42e51274b8268ebcb65dc15bd4a5f69b9eedb485c3e.css"/>
 
-    <meta property="og:title" content="My First Blog" />
-<meta property="og:description" content="1、Hugo简介 搭建个人搭建个人博客有很多开源的博客框架，我使用的框架是Hugo。Hugo 是一个基于Go 语言的框架，可以快速方便的创建自己的博客。
-Hugo 支持Markdown 语法，我们可以将自己的文章写成Markdown 的格式，放在我们用Hugo 创建的博客系统中，从而展示给他人。
-2、Git、Hugo安装 本人电脑操作系统为Windows 10 64位
-(1)、安装Git for Windows
-(2)、安装Hugo二进制版
-下载Hugo Windows 64位版压缩包，解压，将包含hugo.exe的目录添加到path变量，打开Git Bash，执行
-hugo version
-结果如下图所示，表示安装成功
-3、创建一个GitHub仓库 这个仓库将用于发布在Hugo上生成的博客
-4、创建Hugo站点 在Git Bash中，进入想要保存站点文件夹的路径，执行
-hugo new site myblog
-系统会生成一个名为myblog的站点工程文件夹
-目录结构如下：  archetypes/
-content/ #静态页面目录
-data/
-layouts/
-resourse/
-static/ #静态文件目录
-themes/ #主题目录
-config.toml #配置文件
- 5、添加主题 在Hugo 主题选择一款主题（我选择的是hugo-theme-noteworthy）,将其下载到themes目录下（或者在themes目录下使用指令添加）
-然后修改根目录中的config.toml文件
-其中baseurl为要发布的GitHub网址，title为博客的名字，theme为主题的名字
-6、创建一篇博客 在根目录中执行
-hugo new posts/my-first-blog.md
-在content\posts\目录下新增了my-first-blog.md文件，使用markdown编辑器即可编辑其中的内容（我使用的是Typora）
-在发布时需要把 draft: true 改为 draft: false 或者直接删除
-7、本地服务器测试 在根目录下执行
-hugo server" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://kyrieirving1119.github.io/posts/my-first-blog/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-10-08T17:59:36+08:00" />
-<meta property="article:modified_time" content="2021-10-08T17:59:36+08:00" />
+    
+    
+    
+
+    
+    
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="/">myblog</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+  <a class="color-link nav-link" href="http://kyrieirving1119.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
 
 
 
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="http://kyrieirving1119.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
-      <h1>myblog</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
-    </header>
-    <main class="app-container">
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class ="post-title">My First Blog</h1>
-      <div class="post-meta">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-          Oct 8, 2021
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-          1 min read
-        </div>
-      </div>
-    </header>
-    <div class="post-content">
-      <h4 id="1hugo简介"><strong>1、Hugo简介</strong></h4>
+
+    <p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+    <p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+
+	<script src="http://kyrieirving1119.github.io/js/main.min.c1aee25a817e9beb1f9c4afd9d62311227a7f5e46720e404dc1dda97281f47f2.js" integrity="sha256-wa7iWoF+m+sfnEr9nWIxEien9eRnIOQE3B3alygfR/I=" crossorigin="anonymous"></script>
+</footer>
+
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">My First Blog</h1>
+    
+    <time>October 8, 2021</time>
+    
+    <div>
+        <p>
+        <h4 id="1hugo简介"><strong>1、Hugo简介</strong></h4>
 <p>搭建个人搭建个人博客有很多开源的博客框架，我使用的框架是<a href="https://gohugo.io/">Hugo</a>。Hugo 是一个基于Go 语言的框架，可以快速方便的创建自己的博客。</p>
 <p>Hugo 支持Markdown 语法，我们可以将自己的文章写成Markdown 的格式，放在我们用Hugo 创建的博客系统中，从而展示给他人。</p>
 <h4 id="2githugo安装"><strong>2、Git、Hugo安装</strong></h4>
@@ -175,12 +190,92 @@ hugo server" />
 <p><img src="/images/4.png" alt="4"></p>
 <p>到这里，就把博客内容托管在了GitHub上，此时就可以通过https://mosemandie.github.io来访问博客了</p>
 
+        </p>
     </div>
-    <div class="post-footer">
-      
-    </div>
-  </article>
+    
 
-    </main>
-  </body>
+    
+
+    <div class="page-footer">
+        
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<div class="footer-mobile-links">
+        <p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+		<span class="divider-bar">|</span>
+        <p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+	</div>
+
+	<script src="http://kyrieirving1119.github.io/js/main.min.c1aee25a817e9beb1f9c4afd9d62311227a7f5e46720e404dc1dda97281f47f2.js" integrity="sha256-wa7iWoF+m+sfnEr9nWIxEien9eRnIOQE3B3alygfR/I=" crossorigin="anonymous"></script>
+</footer>
+
+    </body>
 </html>
